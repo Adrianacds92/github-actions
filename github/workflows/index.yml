@@ -1,13 +1,15 @@
+name: Aula 02 - Gatilhos
+
 on: 
   schedule:
-    - cron: '30 * * * *'
+    - cron: '20 * * * *'
 
 jobs:
   using-schedule-workflows:
     runs-on: ubuntu-latest
     steps:
       - name: Show a message
-        run: echo 'Bem-vindo!'
+        run: echo 'Bem-vindo'
       - name: Multiple commands
         run: |
           node -v
